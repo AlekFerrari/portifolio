@@ -1,0 +1,76 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    align-items: center;
+    background: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #464646;
+    margin-right: 1.25rem;
+    text-decoration: none;
+}
+
+.logo {
+    width: 16rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section div nav img {
+    display: flex;
+}
+
+.quem_sou{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.quem_sou-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quem_sou-titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    padding: 1rem
+}
+.quem_sou-texto {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.quem_sou-links {
+    display: flex;
+    list-style: none;
+}
+
+.links {
+    color: #464646;
+    margin-right: 2.5rem;
+    text-decoration: none;
+}
+
+.foto {
+    width: 15rem;
+    margin: 5rem;
+}
+
