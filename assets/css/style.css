@@ -1,76 +1,302 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
 }
-header {
-    align-items: center;
-    background: #DCDCDC;
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    line-height: 1.1875rem;
+    padding-top: 1rem;
 }
 
-header nav ul {
+.cabecalho__estrelas {
+    padding-right: 1rem;
+}
+
+.cabecalho__logo {
     display: flex;
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-header nav ul li a {
-    color: #464646;
-    margin-right: 1.25rem;
-    text-decoration: none;
-}
-
-.logo {
-    width: 16rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-main section div nav img {
-    display: flex;
-}
-
-.quem_sou{
-    display: flex;
-    align-items: center;
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-}
-
-.quem_sou-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.quem_sou-titulo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    padding: 1rem
-}
-.quem_sou-texto {
+    justify-content: space-between;
     font-size: 1rem;
+    font-weight: 700;
+    height: 1.1875rem;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+.menu {
+    display: flex;
     padding: 1rem;
 }
 
-
-.quem_sou-links {
+.menu__links {
+    align-items: center;
     display: flex;
     list-style: none;
 }
 
-.links {
+.menu__link a {
     color: #464646;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
     text-decoration: none;
 }
 
-.foto {
-    width: 15rem;
-    margin: 5rem;
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 1rem 3rem 3rem;
 }
 
+.apresentacao__conteudo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem 0 3rem;
+    text-align: justify;
+}
+
+.apresentacao__titulo {
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.apresentacao__texto {
+    color: #464646;
+    font-size: 1.375rem;
+    letter-spacing: 0.75px;
+    line-height: 1.614375rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.apresentacao__navegacao {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.link a {
+    color: #464646;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.link__seta {
+    padding-left: 1rem;
+}
+
+.apresentacao__foto {
+    padding: 0.5rem;
+}
+
+.foto {
+    border-radius: 100%;
+    padding-left: 2rem;
+}
+
+.sobreMim {
+    background: #EAF2FD;
+    color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sobreMim__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+    margin: 5rem 20rem 1rem 6rem;
+}
+
+.sobreMim__descricao {
+    margin: 1rem 20rem 1rem 6rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    width: 58%;
+}
+
+.sobreMim__assinatura {
+    margin: 1rem 20rem 5rem 6rem;
+    width: 18%;
+    color: black;
+}
+
+.skills {
+    color: #464646;
+    line-height: 1.1875rem;
+    margin: 5rem;
+    padding-bottom: 3rem;
+}
+.skills__titulo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.skills__lista {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #ffffff;
+    width: 10.875rem;
+    height: 11rem;
+    padding: 1rem;
+ 
+}
+
+.skills__imagem {
+    width: 20%;
+}
+
+.skill__item--titulo {
+    font-weight: 700;
+    padding: 1rem 0 0 0;
+}
+
+.hobbies {
+    color: #464646;
+    line-height: 1.1875rem;
+    margin: 5rem;
+    padding-bottom: 3rem;   
+}
+
+.hobbies__titulo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.hobbies__lista {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.hobbies__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #ffffff;
+    width: 10.875rem;
+    height: 11rem;
+    padding: 1rem;    
+}
+
+.hobbies__imagem {
+    width: 25%;
+}
+
+.hobbies__item--titulo {
+    font-weight: 700;
+    padding: 1rem 0 0 0;
+}
+
+.formacao {
+    align-items: center;
+    background: #EAF2FD;
+    color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formacao__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 3rem;  
+}
+
+.formacao__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.formacao__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;; 
+    width: 22rem;
+    height: 21.6875rem; 
+    margin: 1rem;
+}
+
+.formacao__imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;  
+    width: 22rem;
+    height: 17.875rem;
+}
+
+.formacao__imagem--unicamp {
+    background-image: url(../img/Unicamp.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formacao__imagem--impacta {
+    background-image: url(../img/Impacta.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formacao__imagem--alura {
+    background-image: url(../img/alura-oracle.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.formacao__item--titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.formacao__descricao {
+    font-weight: 500;
+}
+
+.projetos {
+    color: #464646;
+    line-height: 1.1875rem;
+    padding-bottom: 3rem;   
+}
+
+.projetos__titulo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    text-align: center;
+}

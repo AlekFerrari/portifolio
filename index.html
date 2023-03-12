@@ -3,48 +3,123 @@
     <head>
         <meta charset="UTF=8">
         <meta name="viewport" content="width=device-width inicial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Portifolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
         <link href="./assets/css/normalize.css" rel="stylesheet">
         <link href="./assets/css/reset.css" rel="stylesheet">
         <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="./assets/img/logo_ale.png" alt="Logo Aleksandra Ferrari" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Hobbies</a></li>
-                    <li><a href="">Formação</a></li>
-                    <li><a href="">Projetos</a></li>
-                    <li><a href="" id="ativo">aleksandraferrari@gmail.com</a></li>
+        <header class="cabecalho">
+            <p class="cabecalho__logo"><img src="assets/img/sparkle.svg" class="cabecalho__estrelas" alt="estrelas"/>  Aleksandra Ferrari</p>
+            <nav class="menu">
+                <ul class="menu__links">
+                    <li class="menu__link"><a href="#Sobre">Sobre mim</a></li>
+                    <li class="menu__link"><a href="#Skills">Skills</a></li>
+                    <li class="menu__link"><a href="#Hobbies">Hobbies</a></li>
+                    <li class="menu__link"><a href="#formação">Formação</a></li>
+                    <li class="menu__link"><a href="#Projetos">Projetos</a></li>
+                    <li class="menu__link"><a href="#aleksandraferrari@gmail.com" id="ativo">aleksandraferrari@gmail.com</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="quem_sou">
-                <div class="quem_sou-conteudo">
-                    <h1 class="quem_sou-titulo">Olá Meu nome é Aleksandra Ferrari e estou começando minha jornada Front-End.</h1>
-                    <p class="quem_sou-texto">Sou formada em Tecnologia em Construção Civil pela UNICAMP, sou formada em AUTOCAD pela IMPACTA e sempre fui fascinada neste universo da computação e progrmação, atualmente estou participando do projeto Oracle ONE na Alura. Sou do Signo de Peixes, adoro arte, musica e filmes e tambem sou terapeuta holistica.</p>
-                    <nav class="quem_sou-navegacao">
-                        <ul class="quem_sou-links">
-                            <li class="links"><a href="#">GitHub</a></li>
-                            <li class="links"><a href="#">Linkedin</a></li>
-                            <li class="links"><a href="#">Instagram</a></li>
-                            <li class="links"><a href="#">Curriculo</a></li>
+            <section class="apresentacao">
+                <div class="apresentacao__conteudo">
+                    <h1 class="apresentacao__titulo">Olá Meu nome é Aleksandra Ferrari e estou começando minha jornada Front-End.</h1>
+                    <p class="apresentacao__texto">Sou Formada em Tecnologia em Contrução Civil pela UNICAMP. Atualmente participando do projeto Oracle ONE na Alura.</p>
+                    <nav class="apresentacao__navegacao">
+                        <ul class="apresentacao__links">
+                            <li class="link">GitHub<a href="https://github.com/AlekFerrari" class="link__seta"><img src="assets/img/seta.png"/></a></li>
+                            <li class="link">Linkedin<a href="https://www.linkedin.com/in/aleksandra-ferrari/" class="link__seta"><img src="assets/img/seta.png"/></a></li>
+                            <li class="link">Instagram<a href="https://www.instagram.com/aleksandraferrari/" class="link__seta"><img src="assets/img/seta.png"/></a></li>
+                            <li class="link">Curriculo<a href="https://drive.google.com/file/d/1PtU56o__c3qr6BQU2a4KWObFGkvmPky8/view?usp=share_link" class="link__seta"><img src="assets/img/seta.png"/></a></li>
                         </ul>
                     </nav>
-                </div>                
-                <img class="foto" src="./assets/img/foto_aleksandra.png" alt="Foto Aleksandra">
+                </div>
+                <div class="apresentacao__foto">
+                    <img class="foto" src="./assets/img/foto_aleksandra.jpg" alt="Foto Aleksandra">
+                </div>
             </section>
+            <section class="sobreMim">
+                <h2 class="sobreMim__titulo">Quem Sou</h2>
+                <p class="sobreMim__descricao">Tenho 51 anos, trabalho na área comercial de uma empresa de Software. Formada em Tecnologia em Construção Civil pela UNICAMP, AUTOCAD pela IMPACTA TECNOLOGIA e Terapeuta Energética. Sempre fui fascinada neste universo da informática e computação gráfica.</p>
+                <p class="sobreMim__descricao">Fiquei muitos anos sem estudar voltando agora nesta oportunidade do projeto Oracle ONE na Alura, aprendendo sobre programação, mas seu que tenho muita mais a aprender. Gosto de desafios, quanto mais difícil melhor, fico quebrando a cabeça até resolver... rsrsr, sou persistente e perfeccionista. Sou do Signo de Peixes, adoro arte, música e filmes.</p>
+                <img src="./assets/img/assinatura.png" class="sobreMim__assinatura" alt="assinatura"/>
+            </section>             
             <section class="skills">
+                <h2 class="skills__titulo">Skills</h2>
                 <div class="skills__lista">
-                    <span class="skill__item skill__item--html">Html 5</span>
+                    <div class="skills__item">
+                        <img class="skills__imagem" src="./assets/img/html5.png" alt="logo html"/>
+                        <h4 class="skill__item--titulo">Html 5</h4>
+                    </div>
+                    <div class="skills__item">
+                        <img class="skills__imagem" src="./assets/img/javascript.png" alt="logo JavaScript"/>
+                        <h4 class="skill__item--titulo">Java Script</h4>
+                    </div>
+                    <div class="skills__item">
+                        <img class="skills__imagem" src="./assets/img/css3.png" alt="logo css"/>
+                        <h4 class="skill__item--titulo">CSS 5</h4>
+                    </div>
+                    <div class="skills__item">
+                        <img class="skills__imagem" src="./assets/img/Autocad.png" alt="logo AutoCAD"/>
+                        <h4 class="skill__item--titulo">AutoCAD</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="hobbies">
+                <h2 class="hobbies__titulo">Hobbies</h2>
+                <div class="hobbies__lista">
+                    <div class="hobbies__item">
+                        <img class="hobbies__imagem" src="./assets/img/jardinagem.png" alt="Jardinagem"/>
+                        <h4 class="hobbies__item--titulo">Jardinagem</h4>
+                    </div>  
+                    <div class="hobbies__item">
+                        <img class="hobbies__imagem" src="./assets/img/croche.png" alt="Crochê"/>
+                        <h4 class="hobbies__item--titulo">Fazer Crochê</h4>
+                    </div>
+                    <div class="hobbies__item">
+                        <img class="hobbies__imagem" src="./assets/img/assistir-filme.png" alt="Assistir Series"/>
+                        <h4 class="hobbies__item--titulo">Assistir Series</h4>
+                    </div>
+                    <div class="hobbies__item">
+                        <img class="hobbies__imagem" src="./assets/img/musica.png" alt="Música"/>
+                        <h4 class="hobbies__item--titulo">Ouvir Musica</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="formacao">
+                <h2 class="formacao__titulo">Formação Acadêmica</h2>
+                <div class="formacao__lista">
+                    <div class="formacao__item">
+                        <div class="formacao__imagem formacao__imagem--unicamp"></div>
+                        <h4 class="formacao__item--titulo">Tecnologia em Conrução Civil</h4>
+                        <p class="formacao__descricao">1996 - UNICAMP</p>
+                    </div>  
+                    <div class="formacao__item">
+                        <div class="formacao__imagem formacao__imagem--impacta"></div>
+                        <h4 class="formacao__item--titulo">Formação em AutoCAD</h4>
+                        <p class="formacao__descricao">2010 - IMPACTA</p>
+                    </div>  
+                    <div class="formacao__item">
+                        <div class="formacao__imagem formacao__imagem--alura"></div>
+                        <h4 class="formacao__item--titulo">Front-End</h4>
+                        <p class="formacao__descricao">Cursando - ALURA - ONE ORACLE </p>
+                    </div>  
+            </section>
+            <section class="projetos">
+                <h2 class="projetos__titulo">Projetos</h2>
+                <div class="projeto">
+                    <img src="./assets/img/decodificador.png" class="projeto__decodificador" alt="Projeto decodificador"/>
+                    <div class="projeto__informacao">
+                        <h4 class="projeto__informacao--titulo">Decodificador de texto</h4>
+                        <p class="projeto__informacao--descrição">Challenge Alura Codificador</p>
+                        <button class="botao__repositorio"></button>
+                        <button class="botao__demo"></button>
+                    </div>
                 </div>
             </section>
         </main>
